@@ -1,0 +1,8 @@
+*.m~
+*.mat
+*.py
+*.pyc
+*.c
+*.cpp
+*.h
+*.hpp
