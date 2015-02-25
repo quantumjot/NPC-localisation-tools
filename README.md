@@ -1,4 +1,7 @@
-impy-tools
-==========
+NPC-localisation-tools
+======================
 
-Tools for use with impy
+A set of tools for isolating, rotating and aligning structures found in
+localisation microscopy images.
+
+Run demo.m for a demonstration.
