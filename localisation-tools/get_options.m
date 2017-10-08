@@ -11,7 +11,7 @@ options.verbose = 0;                    % set this option for verbose output
 
 % options for NPC finding
 options.scanning_window = [20.,1.];     % scanning window length (nm)
-options.min_localisations = 100.;       % minimum number of localisations to be considered
+options.min_localisations = 20.;        % minimum number of localisations to be considered
 options.min_separation = 50.;           % separation between peaks in envelope histogram (nm)
 
 % options for structure alignment

@@ -1,7 +1,7 @@
 %% demo.m
 
 % get some simulated localisation data
-[xy, ref_image] = simulate_data(.01);
+[xy, ref_image] = simulate_data(.01, 1000);
 
 % pad the ref image to be the correct size for image alignment
 [ref_imageX] = rot90(padarray(ref_image, [2,20]));

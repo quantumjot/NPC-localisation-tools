@@ -76,6 +76,7 @@ end
 
 binDat.envelope = [envelope_X,envelope_Y];
 binDat.structures = pores;
+binDat.poly_hist = poly_hist;
 
 % plot some output
 plot_envelope(binDat, poly_hist, options)

@@ -16,13 +16,13 @@
 % Lowe, A.R. 2011-2015
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function [simulated_data, ref_image] = simulate_data(noise)
+function [simulated_data, ref_image] = simulate_data(noise, num_mols)
 
 % get some options
 options = get_options();
 
 % make a simulated arrow
-[arrow_xy] = simulated_arrow(1000, 1);
+[arrow_xy] = simulated_arrow(num_mols, 1);
 
 % now make a circular envelope with arrows rotated and pointed toward the centre
 nucleus_radius = 100.;
@@ -86,5 +86,7 @@ for i = 1:num_localisations_arms
     xy = cat(1,xy, [-i*dx, -size+i*dy]);
     xy = cat(1,xy, [i*dx, -size+i*dy]);
 end
+
+
 
 return
